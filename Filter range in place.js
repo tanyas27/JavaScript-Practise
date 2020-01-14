@@ -14,6 +14,7 @@ function filterRangeInPlace(arr,a,b)
     }
     else{
         arr.splice(i,1);
+        i--;
     }
   }
 }
