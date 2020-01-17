@@ -12,7 +12,7 @@ function unique(arr) {
   
   console.log( unique(strings) ); // Hare, Krishna, :-O
 
-  //**************OR************ Second Method without using set
+  //**************OR************ Second Method without using Set()
   function unique(arr){
    let result = [];
    for(let s of arr){
