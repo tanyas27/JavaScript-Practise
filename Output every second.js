@@ -11,4 +11,25 @@ function printNumbers(from, to){
       clearInterval(timerId);
     } 
 }
-printNumbers(2,8);
+ printNumbers(2,8);
+
+/************ OR **************/ 
+function printNumbers1(from, to){
+    setInterval(function (){
+        console.log(from++);
+        if(from>to){
+            clearInterval(timerId);  
+          }
+    },1000);
+}
+printNumbers1(11,20);
+
+/************** OR ***************/
+function printNumbers2(from,to){
+ setTimeout(function  printN(){
+      console.log(from++);
+      if(from<to)
+        setTimeout(printN(),1000);      
+  },1000);
+}
+printNumbers2(21,29);
