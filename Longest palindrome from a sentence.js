@@ -13,4 +13,4 @@ function func1 (str){
      return word.split('').join(",") == word.split('').reverse().join(",")? true : false ;
    }
    
-   console.log(func1("There is forgeeksskeegrof ana ."));
+   console.log(func1("There is forgeeksskeegrof ana."));
