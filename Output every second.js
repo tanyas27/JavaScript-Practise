@@ -28,7 +28,7 @@ printNumbers1(11,20);
 function printNumbers2(from,to){
  setTimeout(function  printN(){
       console.log(from++);
-      if(from<to)
+      if(from<=to)
         setTimeout(printN(),1000);      
   },1000);
 }
